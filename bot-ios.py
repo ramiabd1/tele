@@ -667,7 +667,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 ],
             ]
             reply_markup = InlineKeyboardMarkup(keyboard)
-            await query.edit_message_text("مرحبا بك في سورس التجميع الخاص ببوتات ايكو :\n\n- سرعة التجميع : " + str(info["sleeptime"]), reply_markup=reply_markup)
+            await query.edit_message_text("مرحبا بك في سورس التجميع الخاص في رامي   :\n\n- سرعة التجميع : " + str(info["sleeptime"]), reply_markup=reply_markup)
         elif (str(query.message.chat.id) in info["admins"]):
             keyboard = [
                 [
@@ -680,7 +680,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 ],
             ]
             reply_markup = InlineKeyboardMarkup(keyboard)
-            await query.edit_message_text("مرحبا بك في سورس التجميع الخاص ببوتات ايكو :\n\n- سرعة التجميع : " + str(info["sleeptime"]), reply_markup=reply_markup)
+            await query.edit_message_text("مرحبا بك في سورس التجميع الخاص في رامي :\n\n- سرعة التجميع : " + str(info["sleeptime"]), reply_markup=reply_markup)
     elif (query.data == "sleeptime"):
         await query.edit_message_text(f"يرجى إرسال العدد الذي ترغب فيه من الثواني لانتظار البوت للاشتراك في القناة التالية :", reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("رجوع", callback_data="myadminsecho")],
